@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = tempfile.gettempdir()
 
 MODEL_PATH = "runs/detect/train/weights/best.pt"
-JSON_PATH = "output.json"
+JSON_PATH = "bouding_box.json"
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
